@@ -80,9 +80,7 @@ int main() {
         "Hmm, I haven't thought about that before."
     };
 
-    printf("=================================\n");
     printf("       C SIMPLE AI CHATBOT       \n");
-    printf("=================================\n");
 
     printf("AI: Hello! I'm your chatbot.\n");
     printf("AI: What's your name?\n\n");
