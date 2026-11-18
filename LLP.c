@@ -1,3 +1,9 @@
+/*
+Basic Input-output in Linked List in c
+js to practice for finals ahh program
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
