@@ -48,6 +48,8 @@ void input(Node **head, int size){
         temp = newNode;
     }
 }
+
+//the basic printing is lowkey not convenient...
 void print(Node *head, int size){
     for(int i = 0;i < size;i++){
         printf("%d ->", head->data);
