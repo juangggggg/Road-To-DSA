@@ -1,3 +1,13 @@
+/*
+      Disclaimer! This program is based on a coding exercises 
+      assigned by my professor. These are academic practice problems, and the 
+      repository serves as a record of my own 
+      learning, solutions, and progress. 
+      
+      Not all original code or problem ideas are mine.
+*/
+
+
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
 
