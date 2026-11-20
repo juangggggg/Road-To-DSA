@@ -1,3 +1,12 @@
+/*
+      Disclaimer! This program is based on a coding exercises 
+      assigned by my professor. These are academic practice problems, and the 
+      repository serves as a record of my own 
+      learning, solutions, and progress. 
+      
+      Not all original code or problem ideas are mine.
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -44,7 +53,26 @@ int removeSong(Node **head, const char *title) {
 }
 
 int moveUp(Node **head, const char *title) {
-      
+      if(*head == NULL || strcmp((*head)->title, title) == 0){
+            return 0;
+      }
+
+      Node **link = head;
+
+      while(*link != NULL && (*link)->next != NULL){
+            if(strcmp((*link)->next->title, title) == 0){
+                  Node *target = (*link)->next;
 
 
+                  //swapping is still experimental..
+                  (*link)->next = target->next;
+                  target->next = *link;
+                  *link = target;
+
+                  return 1;
+            }
+            link = &(*link)->next;
+      }
+
+      return 0;
 }
