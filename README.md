@@ -47,12 +47,12 @@ You can participate by:
 
 ## 💻 Tech Stack
 
-\<p>
+<p>
 &#x20; \<img src="[https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white](https://img.shields.io/badge/C-00599C?style=for-the-badge\&logo=c\&logoColor=white)" />
 &#x20; \<img src="[https://img.shields.io/badge/DSA-8A2BE2?style=for-the-badge&logo=thealgorithms&logoColor=white](https://img.shields.io/badge/DSA-8A2BE2?style=for-the-badge\&logo=thealgorithms\&logoColor=white)" />
 &#x20; \<img src="[https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)" />
 &#x20; \<img src="[https://img.shields.io/badge/Open%20Source-3DA639?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/Open%20Source-3DA639?style=for-the-badge\&logo=github\&logoColor=white)" />
-\</p>
+</p>
 
 ---
 
