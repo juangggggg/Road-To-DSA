@@ -104,7 +104,7 @@ No competition. No pressure to be perfect. Just a community of programmers learn
 
 ---
 
-\<div align="center">
+<div align="center">
 
 ## ⚡ The journey doesn't have to be solo.
 
@@ -112,4 +112,4 @@ No competition. No pressure to be perfect. Just a community of programmers learn
 
 *Every contributor starts somewhere. Let's build our skills together.*
 
-\</div>
+</div>
