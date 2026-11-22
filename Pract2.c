@@ -1,13 +1,15 @@
+// Just a basic understanding of linked list..
+
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure
+
 typedef struct Node {
     int data;
     struct Node *next;
 } Node;
 
-// Function Prototypes
+
 void inputList(Node **head, int size);
 void displayAndSumOdd(Node *head);
 void freeList(Node **head);
@@ -19,13 +21,9 @@ int main() {
     printf("Enter number of nodes: ");
     scanf("%d", &size);
 
-    // Input linked list
+
     inputList(&head, size);
-
-    // Display linked list and calculate odd sum
     displayAndSumOdd(head);
-
-    // Free allocated memory
     freeList(&head);
 
     return 0;
@@ -69,10 +67,10 @@ void displayAndSumOdd(Node *head) {
     }
 
     printf("NULL\n");
-    // YOUR CODE HERE
+   
     Node *temp = head;
     while(temp != NULL){
-        if(temp->data % 2 != 0 || temp->data % 2 == 0){
+        if(temp->data % 2 != 0 || temp->data % 2 == 0){ //btw ts condition only works in intigers so ya...
             sum += temp->data;
         }
         temp = temp->next;
