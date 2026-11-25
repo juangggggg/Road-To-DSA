@@ -1,0 +1,186 @@
+==================================================
+PROBLEM 3: LOW STOCK DETECTOR
+==================================================
+
+TOPIC:
+Singly Linked List, Structures, Traversal,
+Conditional Statements, and Counting Algorithms.
+
+--------------------------------------------------
+1. SCENARIO
+--------------------------------------------------
+
+Create an inventory monitoring program using a
+singly linked list.
+
+Each node contains:
+
+- char code      = Item identification.
+- int quantity   = Available stock.
+- struct Node *next = Pointer to the next node.
+
+Your program must identify inventory items with
+a quantity BELOW 10.
+
+--------------------------------------------------
+2. PROGRAM REQUIREMENTS
+--------------------------------------------------
+
+FUNCTION 1: inputList(Node **head, int size)
+
+TASK:
+- Ask the user for the item code.
+- Ask the user for the quantity.
+- Allocate a new node using malloc().
+- Insert each node at the END of the list.
+
+HINTS:
+1. Initialize a temporary pointer to NULL.
+2. Use a for loop based on size.
+3. Allocate a new node inside the loop.
+4. Check if malloc() failed.
+5. Input the character and integer.
+6. Set newNode->next to NULL.
+7. Check if *head is NULL.
+   - YES: Make newNode the head.
+   - NO: Connect temp->next to newNode.
+8. Move temp to newNode.
+
+
+FUNCTION 2: displayList(Node *head)
+
+TASK:
+- Display all inventory items.
+- Show each item's code and quantity.
+
+HINTS:
+1. Create a temporary pointer starting at head.
+2. Use while(temp != NULL).
+3. Display temp->code.
+4. Display temp->quantity.
+5. Move to the next node.
+
+REMEMBER:
+You only need ONE while loop.
+
+
+FUNCTION 3: countLowStock(Node *head)
+
+TASK:
+- Find all items with quantity BELOW 10.
+- Display their item codes and quantities.
+- Count how many items have low stock.
+- Display the total number of low stock items.
+
+HINTS:
+1. Initialize count = 0.
+2. Create a temporary pointer starting at head.
+3. Traverse using while(temp != NULL).
+4. Check if temp->quantity is below 10.
+5. If TRUE:
+   - Display the current item's code.
+   - Display the current item's quantity.
+   - Increase count by 1.
+6. Move temp to the next node.
+7. Display the final count AFTER the loop.
+
+IMPORTANT:
+Do not stop at the first matching node.
+Check EVERY node in the linked list.
+
+
+FUNCTION 4: freeList(Node **head)
+
+TASK:
+- Free all allocated nodes.
+- Set head to NULL.
+
+HINTS:
+1. Create temp = *head.
+2. Traverse while temp != NULL.
+3. Save temp->next in another pointer.
+4. Free the current node.
+5. Move temp to the saved next node.
+6. Set *head = NULL after the loop.
+
+IMPORTANT:
+Always save the next node BEFORE calling free().
+
+--------------------------------------------------
+3. EXAMPLE INPUT
+--------------------------------------------------
+
+Enter number of items: 5
+
+A 15
+B 5
+C 8
+D 20
+E 3
+
+
+--------------------------------------------------
+4. EXPECTED OUTPUT
+--------------------------------------------------
+
+===== INVENTORY =====
+
+[A] Quantity: 15
+[B] Quantity: 5
+[C] Quantity: 8
+[D] Quantity: 20
+[E] Quantity: 3
+
+===== LOW STOCK REPORT =====
+
+[B] Quantity: 5
+[C] Quantity: 8
+[E] Quantity: 3
+
+Total low stock items: 3
+
+
+--------------------------------------------------
+5. RULES AND RESTRICTIONS
+--------------------------------------------------
+
+1. Use a singly linked list.
+2. Do not use arrays.
+3. Use malloc() for node allocation.
+4. Use free() to release memory.
+5. Use temp->next to traverse.
+6. Use Node **head when modifying the head.
+7. Use count++ to count matching nodes.
+8. Do not stop searching after the first match.
+9. Write your own code.
+
+
+--------------------------------------------------
+6. LEARNING OBJECTIVES
+--------------------------------------------------
+
+After completing this problem, you should understand:
+
+- How to input char and int together.
+- How to allocate and connect nodes.
+- How to traverse a linked list.
+- How to use if conditions during traversal.
+- How to count nodes that meet a condition.
+- How to free dynamically allocated memory.
+
+
+--------------------------------------------------
+7. COMPLETION CHECKLIST
+--------------------------------------------------
+
+[ ] Complete inputList().
+[ ] Complete displayList().
+[ ] Complete countLowStock().
+[ ] Complete freeList().
+[ ] Compile the program.
+[ ] Test with different quantities.
+[ ] Verify the low stock count.
+
+==================================================
+END OF PROBLEM 3
+==================================================
